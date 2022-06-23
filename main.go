@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	config "github.com/Miguel-Florian/KokoChic/Config"
-	routers "github.com/Miguel-Florian/KokoChic/Routers"
+	controllers "github.com/Miguel-Florian/KokoChic/Controllers"
 	"github.com/gin-gonic/gin"
 )
 
@@ -14,9 +14,14 @@ func main() {
 
 	config.ConnectDB() //run a database
 	r := gin.Default()
-	r.SetTrustedProxies(nil)
 
-	routers.path(r) //Iniatialize a func router
+	//Iniatialize a func router
+	router := r.Group("/kokochic")
+	{
+		router.GET("/", controllers.Index())
+		router.GET("/about", controllers.About())
+		router.GET("/contact", controllers.Contact())
+	}
 
 	r.Run("localhost:8080")
 }
