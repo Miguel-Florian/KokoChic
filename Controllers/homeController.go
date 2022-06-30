@@ -1,9 +1,13 @@
 package controllers
 
-import "github.com/gin-gonic/gin"
+import (
+	"net/http"
 
-func Index() gin.HandlerFunc {
-	return (func(c *gin.Context) {
+	"github.com/gin-gonic/gin"
+)
 
+func Index(c *gin.Context) {
+	c.HTML(http.StatusOK, "index.html", gin.H{
+		"title": "Main website",
 	})
 }
