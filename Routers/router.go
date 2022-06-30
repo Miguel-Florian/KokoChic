@@ -8,7 +8,7 @@ import (
 func path(router *gin.Engine) {
 	r := router.Group("/kokochic")
 	{
-		r.GET("/", controllers.Index())
+		r.GET("/", controllers.Index)
 		r.GET("/about", controllers.About())
 		r.GET("/contact", controllers.Contact())
 	}
