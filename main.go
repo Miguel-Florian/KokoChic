@@ -25,8 +25,7 @@ func main() {
 	router := r.Group("/kokochic")
 	{
 		router.GET("/home", controllers.Index)
-		router.GET("/about", controllers.About())
-		router.GET("/contact", controllers.Contact())
+		router.GET("/order", controllers.Order)
 	}
 	r.Run("localhost:8080")
 }
