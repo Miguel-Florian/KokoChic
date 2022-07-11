@@ -1,0 +1,27 @@
+/* All body and html file */
+html,body{
+    overflow: hidden;
+}
+/*end*/
+
+/*Header template */
+header .kc-title, nav .kc-title{
+    font-family: satisfy;
+}
+.product-type{
+    font-style: italic;
+    font-family: Arial,Helvetica, sans-serif;
+    font-weight: bold;
+    color: #0d6efd;
+}
+.kc-p-subtitle, .nav-item{
+  font-family: Arial,Helvetica, sans-serif;  
+}
+.nav-item .active{
+    font-weight: bold;
+}
+.order{
+    font-size: large;
+    font-family: satisfy;
+}
+/*end*/
