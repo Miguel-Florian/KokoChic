@@ -1,0 +1,32 @@
+{{define "header"}}
+<header>
+    {{template "nav"}}
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators  mb-20">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active d-block mx-auto">
+                <img src="/assets/img/bg.jpg" class="d-block mx-auto h-50" alt="kokochic-huawei-background">
+                <div class="carousel-caption d-none d-md-block  mb-20">
+                    <h5 class="fw-bold">Vente de montres connectées</h5>
+                    <p class="kc-p-subtitle">Nous commercialisons des montrées connectées de marques <span
+                            class="product-type">Huawei</span> et
+                        <span class="product-type">iPhone</span>.
+                    </p>
+                    <div class="container mx-auto">
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <p class="fw-bold mt-2"><a class="btn btn-lg btn-primary order" href="#">Effectuez
+                                        un achat <span class="ml-2"><i class="bi bi-cart4"></i></span></a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{{end}}
