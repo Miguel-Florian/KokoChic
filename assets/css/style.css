@@ -1,11 +1,11 @@
-/* All body and html file */
+/* All body and html file 
 html,body{
     overflow: hidden;
 }
-/*end*/
+end*/
 
 /*Header template */
-header .kc-title, nav .kc-title{
+header .kc-title, nav .kc-title, .kc-button-store{
     font-family: satisfy;
 }
 .product-type{
@@ -25,3 +25,17 @@ header .kc-title, nav .kc-title{
     font-family: satisfy;
 }
 /*end*/
+.kc-about-title span, .kc-product-category-title span, .kc-store span{
+    font-size: 2em;
+    font-weight: bold;
+    font-family: satisfy, sans-serif;
+    color: #0d6efd;
+}
+.kc-about-text{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.kc-product-title{
+    font-weight: Bold;
+    font-size: 1.8em;
+    margin-bottom: 1em;
+}
